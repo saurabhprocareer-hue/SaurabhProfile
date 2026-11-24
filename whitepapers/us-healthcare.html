@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medical Tourism to India</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal strategy white paper, calm and exact
+   IDEA: a printed consulting paper — wide margins, numbered sections, data tables
+   PICTURE: cover band with the three adoption scenarios drawn as rising net-income bars
+   COLOUR and TYPE: site cobalt + coral, white paper ground; Source Serif body, Space Grotesk heads
+   LAYOUT: one 760px reading column, sticky section links, tables in scrollers */
+:root{color-scheme:light dark;--bg:light-dark(#fff,#0b1220);--ink:light-dark(#14203a,#e7edf7);--mute:light-dark(#53617a,#9fb0cc);--line:light-dark(#dde4ef,#23314d);--soft:light-dark(#f1f5fc,#111b2f);--bp:light-dark(#1446a0,#0f2f6e);--hi:light-dark(#1446a0,#8db4ff);--ok:light-dark(#137a4b,#5fd39a);--acc:#ff5a4e}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Source Serif 4",Georgia,serif;overflow-x:clip}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 14px}h3{font-size:20px;margin:28px 0 10px;color:var(--hi)}
+.col{max-width:780px;margin:0 auto;padding:0 max(5vw,16px)}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.top{position:sticky;top:0;z-index:5;background:#0e3680;color:#fff;font:500 14px Inter}
+.top .in{display:flex;gap:4px;overflow-x:auto;padding:6px max(5vw,16px);align-items:center}
+.top a{flex:none;color:#fff;text-decoration:none;padding:10px 10px;border-radius:8px;opacity:.9}
+.top a:hover,.top a:focus-visible{background:#ffffff22;outline:none}
+.top .back{font-weight:600;background:#ffffff1a;margin-right:8px}
+.cover{background:var(--bp);color:#fff;padding:clamp(40px,6vw,80px) 0;background-image:linear-gradient(#ffffff10 1px,transparent 1px),linear-gradient(90deg,#ffffff10 1px,transparent 1px);background-size:32px 32px}
+.cover .col{max-width:1100px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.cover h1{font-size:clamp(34px,5vw,52px);margin:10px 0 16px}
+.kick{font:600 14px Inter;color:#ffd2cd}
+.cover p{color:#dfe8fb;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:22px;font:14px Inter;color:#cfdcf8}.facts b{display:block;color:#fff;font-size:16px}
+.bars{background:#ffffff14;border:1px solid #ffffff33;border-radius:16px;padding:22px;font-family:Inter}
+.bars h4{margin:0 0 14px;font:600 15px Inter}
+.row{display:grid;grid-template-columns:92px minmax(0,1fr) 64px;gap:10px;align-items:center;margin:10px 0;font-size:14px}
+.row i{display:block;height:26px;border-radius:6px;background:#ffffff55}.row.s i{background:var(--acc)}
+.row span:last-child{text-align:right;font-weight:600;white-space:nowrap}
+.bars small{display:block;margin-top:10px;color:#cfdcf8;font-size:13px}
+section{padding:44px 0 8px}
+.sn{font:600 14px Inter;color:var(--acc)}
+.call{background:var(--soft);border-left:4px solid var(--acc);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0}
+.call b{font-family:Inter}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:14px 16px;font:14px/1.4 Inter;color:var(--mute)}
+.kpi b{display:block;font:700 26px "Space Grotesk";color:var(--hi);margin-bottom:4px}
+.scroll{overflow-x:auto;margin:18px 0}
+table{border-collapse:collapse;width:100%;font:14.5px/1.45 Inter}
+th{text-align:left;font-weight:600;color:var(--mute);border-bottom:2px solid var(--line);padding:10px 10px}
+td{border-bottom:1px solid var(--line);padding:10px 10px;vertical-align:top}
+td.n,th.n{text-align:right;white-space:nowrap}
+.g{color:var(--ok);font-weight:600}.r{color:var(--acc);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px;font:14.5px/1.5 Inter}
+.card b{display:block;font:600 16px "Space Grotesk";margin-bottom:4px}
+.phase{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;border-top:1px solid var(--line);padding:16px 0}
+.phase span{font:600 14px Inter;color:var(--acc)}
+.phase b{font-family:"Space Grotesk";display:block}
+.note{font:13.5px/1.5 Inter;color:var(--mute);margin-top:10px}
+footer{margin-top:50px;background:#0e3680;color:#c9d6f2;font:14px Inter;text-align:center;padding:22px}
+footer a{color:#fff}
+@media(max-width:820px){.cover .col{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){table{font-size:13px}.phase{grid-template-columns:minmax(0,1fr);gap:4px}
+.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;color:var(--mute)}.stack td:empty{display:none}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<nav class="top"><div class="in">
+<a class="back" href="../index.html#whitepapers">← Saurabh Singhal</a>
+<a href="#summary">Summary</a><a href="#crisis">Cost crisis</a><a href="#margins">Margins</a><a href="#india">India</a><a href="#costs">Procedure costs</a><a href="#model">Financial model</a><a href="#incentives">Incentives</a><a href="#negotiation">Negotiation</a><a href="#quality">Quality</a><a href="#roadmap">Roadmap</a><a href="#risk">Risk</a>
+</div></nav>
+
+<header class="cover"><div class="col">
+  <div>
+    <div class="kick">White paper · Healthcare strategy · November 2026</div>
+    <h1>Medical Tourism to India: A Path to Restoring US Health Insurer Profitability</h1>
+    <p>How directing eligible members to JCI-accredited Indian hospital networks — Apollo, Max, Fortis and Medanta — can reverse the margin collapse facing US health insurers while delivering faster, high-quality care.</p>
+    <div class="facts"><div>Author<b>Saurabh Singhal</b></div><div>Focus<b>Commercial &amp; self-funded plans</b></div><div>Scenarios<b>5% · 10% · 15% adoption</b></div></div>
+  </div>
+  <div class="bars" aria-label="Net income of a 1 million member plan by adoption scenario">
+    <h4>Net income, hypothetical 1M-member plan</h4>
+    <div class="row"><span>Today</span><i style="width:32%"></i><span>$18.0M</span></div>
+    <div class="row s"><span>5% adoption</span><i style="width:55%"></i><span>$30.8M</span></div>
+    <div class="row s"><span>10% adoption</span><i style="width:77%"></i><span>$43.7M</span></div>
+    <div class="row s"><span>15% adoption</span><i style="width:100%"></i><span>$56.5M</span></div>
+    <small>Net of member incentives and programme admin. See Section 5.</small>
+  </div>
+</div></header>
+
+<main class="col">
+<section id="summary">
+  <h2>Executive summary</h2>
+  <p>The US health insurance industry is in its worst profitability crisis in a generation. Industry-wide profit margins fell from 3.8% in 2020 to 0.4% in 2025, and the combined ratio now exceeds 100% — insurers lose money on every underwriting dollar before overhead. Net income fell from $31 billion to $6 billion in five years, driven by rising hospital costs, surging use of specialty drugs (especially GLP-1s) and high-acuity procedures including oncology, joint replacement and advanced cell therapies.</p>
+  <p>This paper proposes a structured <b>Medical Value Travel (MVT)</b> programme that directs eligible members to premier, JCI-accredited Indian hospital networks for elective and semi-elective high-cost procedures. With savings of 65–90% per procedure versus US list prices, even modest adoption by 5–15% of eligible members produces transformative results.</p>
+  <div class="kpis">
+    <div class="kpi"><b>$12.8M</b>net annual savings at 5% adoption — nearly doubling net income</div>
+    <div class="kpi"><b>$25.7M</b>at 10% adoption, restoring margins close to 2022–2023 levels</div>
+    <div class="kpi"><b>$38.5M</b>at 15% adoption, a +214% improvement in net income</div>
+  </div>
+  <p>GLP-1 pharmaceutical optimisation through India-sourced generics is an additional, separately modelled opportunity.</p>
+</section>
+
+<section id="crisis">
+  <div class="sn">Section 01</div><h2>The US healthcare cost crisis</h2>
+  <p>The United States spends more on healthcare per capita than any other nation, by a wide margin, yet lags peer nations on life expectancy, chronic disease burden and timely access. The causes are well documented: an opaque, fragmented delivery system, little price transparency, administrative duplication, hospital consolidation and pharmaceutical pricing unconstrained by negotiation.</p>
+  <h3>Rising medical costs: the core driver</h3>
+  <p>Hospital and medical expenses paid by US insurers rose by $85 billion (8.9%) in a single year (2023–2024), driven by record utilisation, clinical labour inflation and growth in high-cost interventions.</p>
+  <div class="kpis">
+    <div class="kpi"><b>$45K–$57K</b>average US knee replacement</div>
+    <div class="kpi"><b>$120K+</b>average annual cancer treatment</div>
+    <div class="kpi"><b>$1,349</b>monthly list price, Wegovy (GLP-1)</div>
+    <div class="kpi"><b>$450K</b>average CAR-T cell therapy</div>
+  </div>
+  <h3>The GLP-1 surge: a new structural cost</h3>
+  <p>GLP-1 receptor agonists (Ozempic, Wegovy, Zepbound, Mounjaro) are adding a permanent layer of pharmaceutical spend. Weight-loss GLP-1 fills more than doubled in 2024, and 12.4% of US adults reported using one as of Fall 2025. At $1,027–$1,349 per month, annual cost per patient is $12,300–$16,200. Use among Americans without diabetes rose 643% between 2017 and 2022.</p>
+  <div class="call"><b>Pharmaceutical cost arbitrage.</b> US semaglutide costs roughly five times the price in the next most expensive country. Generic semaglutide is legally made and sold in India for about $50–$100 a month — a potential saving of $10,000–$15,000 per patient per year.</div>
+  <h3>Cancer: the largest catastrophic claims category</h3>
+  <p>Over 2 million Americans are expected to be diagnosed with cancer each year. The National Cancer Institute reports an average initial cost of $43,516 per patient, and last-year-of-life costs averaging $109,727. Chemotherapy ranges from $27,000 for a standard 6-month course to over $200,000 for advanced targeted therapy; CAR-T lists at $400,000–$727,000 per course.</p>
+</section>
+
+<section id="margins">
+  <div class="sn">Section 02</div><h2>Health insurance profit margin collapse</h2>
+  <p>What was once a stable, modest-margin business is now existentially challenged at current cost trajectories.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Year</th><th class="n">Net income</th><th class="n">Profit margin</th><th class="n">Combined ratio</th></tr></thead>
+    <tbody>
+      <tr><td>2020</td><td class="n">$31B</td><td class="n">3.8%</td><td class="n">96.2%</td></tr>
+      <tr><td>2021</td><td class="n">$28B</td><td class="n">3.3%</td><td class="n">96.7%</td></tr>
+      <tr><td>2022</td><td class="n">$26B</td><td class="n">2.8%</td><td class="n">97.2%</td></tr>
+      <tr><td>2023</td><td class="n">$25B</td><td class="n">2.2%</td><td class="n">98.2%</td></tr>
+      <tr><td>2024</td><td class="n">$9B</td><td class="n r">0.8%</td><td class="n r">100.1%</td></tr>
+      <tr><td>2025</td><td class="n">$6B</td><td class="n r">0.4%</td><td class="n r">100.6%</td></tr>
+    </tbody></table></div>
+  <p class="note">Sources: NAIC Annual Health Industry Commentary (2024, 2025); Oliver Wyman Health Insurance Financial Pulse Q4 2025.</p>
+  <p>A combined ratio above 100% in 2024 and 2025 means insurers paid more in claims and admin than they collected in premiums, offset only partly by investment income.</p>
+  <div class="kpis">
+    <div class="kpi"><b>−1.1%</b>Aetna/CVS Health margin, Q4 2025 (net loss)</div>
+    <div class="kpi"><b>0.0%</b>UnitedHealthcare margin, Q4 2025 (breakeven)</div>
+    <div class="kpi"><b>1.1%</b>Elevance Health margin, Q4 2025 (from 2.4%)</div>
+    <div class="kpi"><b>−25%</b>market cap decline, top 7 insurers, 2024–2025</div>
+  </div>
+  <div class="call"><b>Industry inflection point.</b> With margins at $35 PMPM (down from $38 in 2024) against premium of $372 PMPM and a combined ratio above 100%, pricing alone cannot sustain current cost trends. Premium increases lag claims growth by 12–18 months; structural cost reduction is the only viable path back to profitability.</div>
+</section>
+
+<section id="india">
+  <div class="sn">Section 03</div><h2>India as a medical tourism destination</h2>
+  <p>India is not simply a low-cost alternative — it is an accredited, technology-rich ecosystem able to deliver complex surgical and oncology care at a fraction of US prices. Over 7.3 million medical tourists visited India in 2024, and the government's <i>Heal in India</i> initiative has invested in infrastructure, international patient services, digital coordination and medical visas. The market was valued at $8.7 billion in 2025 and is projected to reach $16.2 billion by 2030.</p>
+  <h3>Why India outperforms other destinations</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Factor</th><th>India</th><th>Thailand</th><th>Mexico</th><th>Singapore</th></tr></thead>
+    <tbody>
+      <tr><td>Avg. knee replacement (all-in)</td><td class="g">$5,500–$8,500</td><td>$8,000–$11,000</td><td>$9,000–$12,000</td><td>$13,500–$17,500</td></tr>
+      <tr><td>JCI-accredited hospitals</td><td class="g">30+</td><td>13</td><td>8</td><td>21</td></tr>
+      <tr><td>Primary language</td><td class="g">English widely spoken</td><td>Limited English</td><td>Spanish primary</td><td>English</td></tr>
+      <tr><td>US/UK-trained surgeons</td><td class="g">Very common</td><td>Mixed</td><td>Mixed</td><td>Common</td></tr>
+      <tr><td>CAR-T cell therapy</td><td class="g">Yes (Apollo, Tata)</td><td>Limited</td><td>No</td><td>Yes</td></tr>
+      <tr><td>US insurer precedent</td><td class="g">WellPoint 2008 pilot</td><td>UHG (Bumrungrad)</td><td>Blue Shield CA</td><td>Limited</td></tr>
+    </tbody></table></div>
+  <div class="call"><b>Existing US insurer precedent.</b> WellPoint (now Elevance Health) piloted an India medical tourism programme as early as 2008. UnitedHealthcare Global's navigation services connect members with international providers. Employer-plan administrator HSM Solutions recorded over $11 million in savings in its first four years of medical tourism, and Apollo Hospitals has treated patients from 150+ countries. The infrastructure and precedent exist — the opportunity is in formalising and scaling it.</div>
+</section>
+
+<section id="costs">
+  <div class="sn">Section 04</div><h2>Procedure-level cost analysis</h2>
+  <p>Average US costs for high-volume, high-cost procedures compared with all-inclusive packages at JCI-accredited Indian hospitals. India costs include surgery, implants, 5–10 days of hospitalisation, medication, rehabilitation and care coordination; travel and stay are listed separately.</p>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Procedure</th><th class="n">US cost</th><th class="n">India medical</th><th class="n">Travel &amp; stay</th><th class="n">India all-in</th><th class="n">Net savings</th><th class="n">Reduction</th></tr></thead>
+    <tbody id="procRows"></tbody></table></div>
+  <p class="note">Travel assumes round-trip economy airfare ($900–$1,200), a 2-week stay and accommodation at $60–$100/night. Cancer figures are surgical procedure costs; adjuvant therapy adds cost per cycle.</p>
+  <div class="cards">
+    <div class="card"><b>Joint replacement</b>Bilateral same-day knee replacement costs about 60–70% of two separate US procedures. Premium implants (Zimmer Biomet, Stryker, DePuy) are available, and NPPA price caps keep implants affordable.</div>
+    <div class="card"><b>Chemotherapy</b>$600–$1,200 per cycle in India vs $5,000–$12,000 in the US — 65–82% lower per course. Members can complete initial cycles in India and move to US-based monitoring.</div>
+    <div class="card"><b>Cardiac surgery</b>India pioneered affordable cardiac surgery; Apollo performs among the highest CABG volumes globally and Medanta is among Asia's top cardiac centres. 76–84% reduction.</div>
+    <div class="card"><b>CAR-T &amp; bone marrow</b>CAR-T at Apollo ≈ $50,000 vs $450,000+ in the US. Even 20–50 cases a year for a 1M-member plan yields $7–$30M in annual savings.</div>
+    <div class="card"><b>GLP-1 obesity care</b>Generic semaglutide at $50–$100/month; members travelling for surgery can bring a 90-day personal supply. Bariatric surgery: $5K–$8K vs $25K–$35K.</div>
+  </div>
+</section>
+
+<section id="model">
+  <div class="sn">Section 05</div><h2>Financial impact modelling</h2>
+  <p>A hypothetical US commercial plan with 1 million members, calibrated on NAIC 2025 benchmarks (premium $372 PMPM, claims $337 PMPM, net margin 0.4%). Eligible procedures are elective or semi-elective and medically appropriate for planned travel.</p>
+  <div class="kpis">
+    <div class="kpi"><b>$4.46B</b>annual premium revenue</div>
+    <div class="kpi"><b>$4.04B</b>medical claims</div>
+    <div class="kpi"><b>$400M</b>admin &amp; SG&amp;A (~9%)</div>
+    <div class="kpi"><b>$18M</b>net income (0.4% margin)</div>
+  </div>
+  <h3>Eligible procedure volume (1M members)</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Procedure category</th><th class="n">Annual volume</th><th class="n">% eligible</th><th class="n">Eligible count</th><th class="n">Total US cost</th></tr></thead>
+    <tbody>
+      <tr><td>Knee replacement</td><td class="n">2,500</td><td class="n">70%</td><td class="n">1,750</td><td class="n">$112.5M</td></tr>
+      <tr><td>Hip replacement</td><td class="n">1,500</td><td class="n">70%</td><td class="n">1,050</td><td class="n">$82.5M</td></tr>
+      <tr><td>Cancer treatment (elective surgical/chemo)</td><td class="n">1,200</td><td class="n">35%</td><td class="n">420</td><td class="n">$144.0M</td></tr>
+      <tr><td>Cardiac surgery</td><td class="n">400</td><td class="n">60%</td><td class="n">240</td><td class="n">$36.0M</td></tr>
+      <tr><td>Spinal surgery</td><td class="n">800</td><td class="n">65%</td><td class="n">520</td><td class="n">$32.0M</td></tr>
+      <tr><td>CAR-T / bone marrow transplant</td><td class="n">45</td><td class="n">40%</td><td class="n">18</td><td class="n">$20.3M</td></tr>
+      <tr><td><b>Total eligible pool</b></td><td class="n"><b>6,445</b></td><td></td><td class="n"><b>3,998</b></td><td class="n"><b>$427M</b></td></tr>
+    </tbody></table></div>
+  <h3>Adoption scenarios: net impact</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Scenario</th><th class="n">Cases diverted</th><th class="n">Gross savings</th><th class="n">Incentives</th><th class="n">Admin</th><th class="n">Net savings</th><th class="n">New net income</th></tr></thead>
+    <tbody>
+      <tr><td>A · 5%</td><td class="n">200</td><td class="n">$13.9M</td><td class="n">−$0.9M</td><td class="n">−$0.2M</td><td class="n g">$12.8M</td><td class="n">$30.8M</td></tr>
+      <tr><td>B · 10%</td><td class="n">400</td><td class="n">$27.9M</td><td class="n">−$1.8M</td><td class="n">−$0.4M</td><td class="n g">$25.7M</td><td class="n">$43.7M</td></tr>
+      <tr><td>C · 15%</td><td class="n">600</td><td class="n">$41.8M</td><td class="n">−$2.7M</td><td class="n">−$0.6M</td><td class="n g">$38.5M</td><td class="n">$56.5M</td></tr>
+    </tbody></table></div>
+  <p class="note">Weighted average gross savings $46,500 per case; member cash incentive $3,000 per case; programme admin 1.5% of gross savings. Figures rounded.</p>
+  <div class="call"><b>Key insight.</b> At just 10% adoption the programme more than doubles net income — from $18M to $43.7M — lifting margin from 0.4% to 0.98% with no premium increase or benefit reduction.</div>
+  <h3>GLP-1 pharmaceutical optimisation</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Scenario</th><th class="n">Members on India generic</th><th class="n">Savings / member</th><th class="n">Total annual savings</th></tr></thead>
+    <tbody>
+      <tr><td>Conservative (0.5% of members)</td><td class="n">5,000</td><td class="n">$12,600</td><td class="n">$63M</td></tr>
+      <tr><td>Moderate (1.0%)</td><td class="n">10,000</td><td class="n">$12,600</td><td class="n">$126M</td></tr>
+      <tr><td>Optimistic (2.0%)</td><td class="n">20,000</td><td class="n">$12,600</td><td class="n">$252M</td></tr>
+    </tbody></table></div>
+  <p class="note">Savings = US list price $14,000 less India generic $1,400 including logistics. This route carries regulatory complexity; the conservative case assumes members travelling for other procedures bring a 90-day personal supply under FDA importation guidelines.</p>
+</section>
+
+<section id="incentives">
+  <div class="sn">Section 06</div><h2>Member incentive framework</h2>
+  <p>The critical success factor is voluntary participation, so the value proposition must be unmistakably compelling.</p>
+  <div class="cards">
+    <div class="card"><b>Zero cost share</b>No deductible, copay or coinsurance for approved procedures at network hospitals.</div>
+    <div class="card"><b>Cash reward</b>$2,000–$5,000 paid on completion, tiered by savings and funded from the insurer's share.</div>
+    <div class="card"><b>Travel fully covered</b>Business-class airfare for the patient and economy for one companion.</div>
+    <div class="card"><b>Accommodation covered</b>Hospital-adjacent hotel or premium room for the full 10–21 day recovery.</div>
+    <div class="card"><b>Companion support</b>Companion airfare, hotel and a $50/day meal stipend.</div>
+    <div class="card"><b>Dedicated care coordinator</b>24/7 case manager from pre-travel through 90 days post-return.</div>
+    <div class="card"><b>Pre-travel telemedicine</b>Free video consultation with the Indian surgeon before committing.</div>
+    <div class="card"><b>US follow-up covered</b>Up to 5 in-network follow-up visits, outside normal cost sharing.</div>
+    <div class="card"><b>Medical evacuation</b>Full evacuation cover in every package for rare complications.</div>
+  </div>
+  <div class="call"><b>Incentive economics.</b> The full package — business-class flight $4,000, companion economy $1,200, 15-day hotel $1,500, companion meals $750, cash reward $3,000, coordinator $500, follow-up $500 — totals about <b>$11,450 per case</b>. Even so, the net saving on a knee replacement remains about <b>$25,050</b> (vs $45,000 US cost), and on CAR-T it exceeds <b>$380,000 per case</b>.</div>
+</section>
+
+<section id="negotiation">
+  <div class="sn">Section 07</div><h2>Optimisation: negotiating travel &amp; medical prices</h2>
+  <p>Section 4 uses standard public package prices. A structured programme with committed annual volume can negotiate meaningfully better rates, amplifying every scenario above.</p>
+  <h3>Travel price optimisation</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Travel component</th><th class="n">Standard rate</th><th class="n">Negotiated</th><th class="n">Savings</th></tr></thead>
+    <tbody>
+      <tr><td>Business-class airfare (US–India, RT)</td><td class="n">$4,500–$6,000</td><td class="n g">$2,800–$3,500</td><td class="n g">30–40%</td></tr>
+      <tr><td>Economy companion airfare (RT)</td><td class="n">$900–$1,400</td><td class="n g">$600–$900</td><td class="n g">30–36%</td></tr>
+      <tr><td>Hospital-adjacent hotel (per night)</td><td class="n">$80–$130</td><td class="n g">$55–$90</td><td class="n g">25–32%</td></tr>
+      <tr><td>Airport transfers &amp; ground transport</td><td class="n">$200–$400</td><td class="n g">$100–$200</td><td class="n g">40–50%</td></tr>
+      <tr><td>Travel &amp; medical evacuation insurance</td><td class="n">$300–$600</td><td class="n g">$150–$280</td><td class="n g">40–55%</td></tr>
+    </tbody></table></div>
+  <h3>Medical price negotiation with Indian hospital networks</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Lever</th><th>Mechanism</th><th>Expected impact</th></tr></thead>
+    <tbody>
+      <tr><td>Volume commitment contracts</td><td>Annual MOU guaranteeing minimum case volumes (e.g. 200+ knee replacements a year at Apollo)</td><td class="g">15–25% off package pricing</td></tr>
+      <tr><td>Implant pass-through pricing</td><td>Negotiate directly with Zimmer Biomet / Stryker for India-shipped implants at US GPO pricing</td><td class="g">$500–$2,000 per orthopaedic case</td></tr>
+      <tr><td>Dedicated international patient units</td><td>Reserved bed blocks, priority scheduling, guaranteed turnaround</td><td class="g">Service levels + 10–15% rate concession</td></tr>
+      <tr><td>Outcomes-based pricing</td><td>Payment tied to 90-day outcomes (re-operation, infection rate)</td><td class="g">Risk sharing + quality floor</td></tr>
+      <tr><td>Multi-hospital competitive bidding</td><td>Annual competing bids from Apollo, Max, Fortis, Medanta</td><td class="g">5–10% additional concession</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="quality">
+  <div class="sn">Section 08</div><h2>Quality assurance: accredited partners</h2>
+  <p>Clinical quality is the paramount concern. Network participation is restricted to hospitals holding <b>JCI (Joint Commission International)</b> accreditation — the international equivalent of the Joint Commission's US hospital standard. India has 30+ JCI-accredited hospitals, concentrated in Delhi, Mumbai, Chennai, Hyderabad and Bangalore.</p>
+  <div class="cards">
+    <div class="card"><b>Apollo Hospitals</b>JCI · NABH · NABL · ISO 9001. India's largest private network (73+ hospitals), founded 1983; patients from 150+ countries. Da Vinci Xi robotics, CyberKnife, Southeast Asia's first proton therapy, CAR-T and BMT programmes.</div>
+    <div class="card"><b>Max Healthcare</b>JCI · NABH. Max Saket is one of North India's most advanced oncology and orthopaedic programmes. Da Vinci cancer surgery, Novalis Tx radiation, HIPEC; FICCI Healthcare Delivery Award winner.</div>
+    <div class="card"><b>Fortis Healthcare</b>JCI · NABH · ISO 9001. Fortis Memorial Research Institute (Gurgaon) ranks among India's top multi-specialty hospitals; 1,000+ open-heart surgeries a year, BMT centre, dedicated international patient department.</div>
+    <div class="card"><b>Medanta — The Medicity</b>JCI · NABH · NABL. Founded by Dr. Naresh Trehan; 1,250-bed quaternary care hospital in Gurgaon. Among Asia's highest-volume cardiac programmes; robotics across 7 specialties; liver and kidney transplant.</div>
+  </div>
+  <h3>Quality assurance framework</h3>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Requirement</th><th>Standard</th><th>Monitoring</th></tr></thead>
+    <tbody>
+      <tr><td>Hospital accreditation</td><td>Active JCI accreditation mandatory</td><td>Annual re-verification</td></tr>
+      <tr><td>Surgeon credentialing</td><td>Board-certified, 10+ years' experience, 200+ procedures in specialty</td><td>Biennial re-credentialing</td></tr>
+      <tr><td>Outcomes reporting</td><td>30/90/365-day complication, re-operation and patient-reported outcomes</td><td>Quarterly dashboard</td></tr>
+      <tr><td>Medical record transfer</td><td>DICOM imaging, discharge summaries and operative notes to US PCP within 72 hours</td><td>Automated via coordinator</td></tr>
+      <tr><td>Post-return care</td><td>Mandatory US follow-up at 2 weeks, 6 weeks and 3 months</td><td>Coordinator tracks completion</td></tr>
+      <tr><td>Adverse events</td><td>Major events reported to insurer within 24 hours</td><td>Programme director review</td></tr>
+      <tr><td>Patient satisfaction</td><td>NPS of 70+; surveyed at discharge and 90 days post-return</td><td>Third-party survey platform</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="roadmap">
+  <div class="sn">Section 09</div><h2>Implementation roadmap</h2>
+  <div class="phase"><span>Months 1–3</span><div><b>Programme design &amp; partner selection</b>RFPs to Apollo, Max, Fortis and Medanta; site visits and clinical audits; master service agreements with volume tiers; legal framework for consent, liability and HIPAA record sharing; travel management partner for block airfare and hotels.</div></div>
+  <div class="phase"><span>Months 3–6</span><div><b>Platform &amp; care coordination</b>A digital Medical Value Travel platform: eligibility portal, procedure calculator, telemedicine scheduling, coordinator assignment, real-time case tracking and post-return follow-up, integrated with claims. Train a 5–8 FTE coordination team for a 1M-member plan.</div></div>
+  <div class="phase"><span>Months 4–8</span><div><b>Pilot launch (orthopaedics)</b>Soft launch with knee and hip replacement at two partners (Apollo Chennai, Max Delhi). Target 50–100 cases; gather cost, outcome and satisfaction data; refine processes and member materials.</div></div>
+  <div class="phase"><span>Months 8–14</span><div><b>Full programme launch</b>Expand to oncology, spinal and cardiac; add Fortis and Medanta. Launch member communications via brokers, employer wellness programmes and digital channels. Begin the GLP-1 pilot for members travelling for surgery.</div></div>
+  <div class="phase"><span>Year 2+</span><div><b>Scale &amp; optimisation</b>Renegotiate volume discounts on actual case flow; expand to self-funded employers; launch employer-matching incentives; pursue a regulatory importation channel. Target 10–15% adoption of the eligible pool.</div></div>
+</section>
+
+<section id="risk">
+  <div class="sn">Section 10</div><h2>Risk mitigation</h2>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Risk</th><th>Severity</th><th>Likelihood</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr><td>Clinical complication during travel</td><td class="r">High</td><td class="g">Low</td><td>JCI-only network; medical evacuation cover; emergency return protocol; 24/7 coordinator.</td></tr>
+      <tr><td>Member refusal / cultural resistance</td><td>Medium</td><td class="r">High initially</td><td>Voluntary programme; generous incentives; peer testimonials from early adopters; employer champions.</td></tr>
+      <tr><td>Legal / malpractice liability</td><td class="r">High</td><td class="g">Low</td><td>Comprehensive informed consent; insurer is not the treating provider; liability clauses in hospital contracts.</td></tr>
+      <tr><td>Continuity of care post-return</td><td>Medium</td><td>Medium</td><td>Record transfer within 72 hours; 90-day follow-up covered; coordinator manages PCP handoff.</td></tr>
+      <tr><td>Regulatory (state insurance depts., CMS)</td><td>Medium</td><td class="g">Low</td><td>Voluntary programme; members keep full US in-network benefits; proactive state filing; WellPoint 2008 precedent.</td></tr>
+      <tr><td>Hospital quality deterioration</td><td class="r">High</td><td class="g">Low</td><td>Annual JCI re-audit; quarterly outcomes dashboard; immediate suspension protocol; multi-hospital network avoids a single point of failure.</td></tr>
+      <tr><td>GLP-1 pharmaceutical importation</td><td>Medium</td><td class="r">High</td><td>Phase GLP-1 as personal importation (90-day supply, FDA-policy compliant) in Phase 1.</td></tr>
+    </tbody></table></div>
+  <p class="note">Figures are drawn from public sources cited in the original paper, including NAIC, Oliver Wyman, KFF, GoodRx, the National Cancer Institute and Indian hospital package pricing. Financial modelling is illustrative for a hypothetical plan.</p>
+</section>
+</main>
+<footer>© <span id="yr"></span> Saurabh Singhal · <a href="../index.html#whitepapers">Back to profile</a></footer>
+<script>
+{
+const P=[["Knee replacement (TKR)",45000,5500,3000,8500,36500,"81%"],["Hip replacement",55000,7000,3000,10000,45000,"82%"],["Breast cancer surgery",20000,6000,3500,9500,10500,"53%"],["Lung cancer surgery",30000,10000,3500,13500,16500,"55%"],["Prostate cancer surgery",29000,9000,3500,12500,16500,"57%"],["Chemotherapy (6-month course)",50000,8000,4500,12500,37500,"75%"],["CAR-T cell therapy",450000,50000,8000,58000,392000,"87%"],["Cardiac surgery (CABG)",90000,12000,4000,16000,74000,"82%"],["Spinal fusion",40000,7500,3000,10500,29500,"74%"],["GLP-1 (annual, per patient)",14000,900,500,1400,12600,"90%"]];
+const f=n=>"$"+n.toLocaleString("en-US");
+document.getElementById("procRows").innerHTML=P.map(r=>`<tr><td>${r[0]}</td><td class="n">${f(r[1])}</td><td class="n">${f(r[2])}</td><td class="n">${f(r[3])}</td><td class="n">${f(r[4])}</td><td class="n g">${f(r[5])}</td><td class="n g">${r[6]}</td></tr>`).join("");
+document.getElementById("yr").textContent=new Date().getFullYear();
+}
+</script>
+</body>
+</html>
